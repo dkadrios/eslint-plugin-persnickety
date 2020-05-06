@@ -1,0 +1,25 @@
+{
+  "name": "@studysync/eslint-plugin-persnickety",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Extremely picky eslint rules.",
+  "main": "src/index.js",
+  "dependencies": {
+    "emoji-regex": "^8.0.0"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha '**/*.test.js' --exclude '**/node_modules/**'",
+    "test:watch": "cross-env NODE_ENV=test mocha '**/*.test.js' --watch --exclude '**/node_modules/**'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dkadrios/eslint-plugin-persnickety.git"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "babel-eslint": "10.0.2",
+    "cross-env": "5.2.0",
+    "eslint": "5.16.0",
+    "mocha": "6.2.0"
+  }
+}

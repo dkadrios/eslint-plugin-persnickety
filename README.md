@@ -4,8 +4,8 @@ Extremely picky eslint rules.
 
 ## List of supported rules
 
-- `name`
+- `jsx-child-location`
 
-### name
+### jsx-child-location
 
-description
+Ensures that child nodes have the correct indentation and have appropriate surrounding whitespace

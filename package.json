@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "private": false,
   "description": "Extremely picky eslint rules.",
-  "main": "src/index.js",
-  "dependencies": {
-    "emoji-regex": "^8.0.0"
-  },
+  "main": "lib/index.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha '**/*.test.js' --exclude '**/node_modules/**'",
-    "test:watch": "cross-env NODE_ENV=test mocha '**/*.test.js' --watch --exclude '**/node_modules/**'"
+    "test:watch": "cross-env NODE_ENV=test mocha '**/*.test.js' --watch --exclude '**/node_modules/**' --reporter min"
   },
   "repository": {
     "type": "git",
@@ -18,8 +15,12 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "babel-eslint": "10.0.2",
-    "cross-env": "5.2.0",
-    "eslint": "5.16.0",
-    "mocha": "6.2.0"
+    "cross-env": "7.0.2",
+    "eslint": "6.8.0",
+    "mocha": "7.1.2"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0"
   }
 }

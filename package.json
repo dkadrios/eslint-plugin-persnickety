@@ -1,12 +1,12 @@
 {
   "name": "@studysync/eslint-plugin-persnickety",
-  "version": "0.2.0",
+  "version": "1.0.2",
   "private": false,
   "description": "Extremely picky eslint rules.",
   "main": "lib/index.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha '**/*.test.js' --exclude '**/node_modules/**'",
-    "test:watch": "cross-env NODE_ENV=test mocha '**/*.test.js' --watch --exclude '**/node_modules/**' --reporter min"
+    "test:watch": "cross-env NODE_ENV=test mocha '**/*.test.js' --verbose --watch --exclude '**/node_modules/**' --reporter min"
   },
   "repository": {
     "type": "git",
